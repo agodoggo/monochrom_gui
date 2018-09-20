@@ -70,5 +70,5 @@ if __name__ == "__main__":
     wave_meas2 = a.find_wave()
     print(wave_meas2)
     print(a.get_error())
-    print("git commit")
+    print("git commit push")
 
