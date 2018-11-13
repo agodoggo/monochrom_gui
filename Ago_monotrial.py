@@ -1,9 +1,9 @@
 """
 Created on Fri Sep 19 18:11:40 2014
 
-@author: Bala Krishna Juluri
+@author: Agoston Walter
 """
-import visa
+import PyVisa
 import time
 import codecs
 
