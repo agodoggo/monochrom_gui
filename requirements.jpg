@@ -1,0 +1,59 @@
+# Summary
+# 1) Project requirements:
+#       Dr. Boussert needed a GUI to perform a spectral scan, creating a graph of the energies of different wavelengths.
+#       To do this, we needed to do three things:
+#       X    1. Build a GUI framework for the application using PyQt5
+#       X    2. Write methods to control the monchrometer and perform a scan from an initial wavelength to a final wavelength using PyVisa
+#       _    3. Write methods to control the sensor and create a graph from the data recorded of the scan using PyVisa
+#
+#    What I have done:
+#       I have finished the first two requirements; I have built the GUI framework for the application and I have created the methods
+#       to control the monochrometer and have it scan from an initial wavelength to a specified final wavelength.
+#
+#    What there is left to do:
+#
+#       Finish requirement 3. :
+#
+#       Finish the method for controlling the sensor and place it into the Create_Spectral_Graph method in the Wavelength Scan Application file.
+#       I was unable to complete the method for controlling the sensor because the sensor we chose did not function as we had hoped and a
+#       different sensor will have to be used to complete the project. To complete the sensor method, follow the way I set up using the
+#       monochrometer in my monochrometer_class/Wavelength Scan Application; the only thing you will have to change is the serial name.
+#       Then, using the user manual for the sensor, you will need to write a method for the sensor to take data and record the energies of
+#       the different wavelengths. There should be a method for this inside of the sensor user manual, and if you read the PyVisa
+#       documentation I have put at the bottom of this file in the links section, it will become apparent how to implement this method.
+#       You can also reference how I implemented methods to control instruments within my monochrometer_class.py file. To troubleshoot the
+#       sensor and write a class of methods for it, please use the sensor class I have already built; you will only need to change the serial
+#       name and write some methods with PyVisa and then troubleshoot them by running them in the __name__ == main as I did in the
+#       monchrometer_class.py file.
+#
+#       If you have any questions, please reach out to me at +1-757-553-4281, or email me at agoston.walter@duke.edu
+#
+#       Best of Luck!
+
+
+#Packages used in this project
+
+certifi==2018.10.15
+chardet==3.0.4
+Click==7.0
+docopt==0.6.2
+idna==2.7
+numpy==1.15.4
+pipreqs==0.4.9
+PyQt5==5.11.3
+PyQt5-sip==4.19.13
+pyqt5-tools==5.11.2.1.3
+python-dotenv==0.9.1
+PyVISA==1.9.1
+PyVisaInstrument==0.10.0
+requests==2.20.1
+urllib3==1.24.1
+yarg==0.1.9
+
+#links of webpages used for tutorials and documentation
+
+# https://pyvisa.readthedocs.io/en/stable/getting.html#
+# https://pyvisa.readthedocs.io/en/master/tutorial.html
+# https://www.newport.com/medias/sys_master/images/images/h4a/h42/8797211263006/Mono-Utility-v5.0-Quick-Start-Guide.pdf
+# https://www.newport.com/medias/sys_master/images/images/hae/h47/8797226926110/Oriel-Cornerstone-260-User-Manual-RevA.pdf
+# https://www.pythonforengineers.com/your-first-gui-app-with-python-and-pyqt/
